@@ -161,7 +161,6 @@ source $ZSH/oh-my-zsh.sh
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH/usr/local/lib/"
 export C_INCLUDE_PATH="$C_INCLUDE_PATH:/usr/local/include/blis"
-export LS_COLORS="$(vivid generate snazzy)"
 export BAT_THEME="OneHalfDark"
 
 alias real_ls="/usr/bin/ls"
