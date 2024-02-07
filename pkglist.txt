@@ -1,6 +1,6 @@
 bat
 brightnessctl
-code
+bluez-utils
 dust
 dunst
 fd
@@ -16,7 +16,5 @@ rofi
 rofi-calc
 ruby-colorls
 sublime-text-4
-typora
 unzip
-xournal
 zip
