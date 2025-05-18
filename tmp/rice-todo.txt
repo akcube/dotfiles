@@ -1,0 +1,14 @@
+- [x] bat, colorls
+- [x] screenshot util
+- [x] keybinds (i3-style + swayosd)
+- [x] move cava to wallpaper (hyprwinwrap)
+- [x] rice rofi
+- [] sddm / login manager / lockscreen
+- [] fireship prompt rice
+- [] swaync rice
+- [] eww rice
+- [] install discord, obsidian
+- [] install and rice hardened firefox
+- [] install jetbrains shiz
+- [] check c/c++ dev tools
+
