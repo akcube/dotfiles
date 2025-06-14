@@ -22,7 +22,7 @@ systemctl enable --now supergfxd
 
 # Apply kernel patch
 echo "[3/3] Patching kernel"
-pacman -Sy linux-g14 linux-g14-headers
+pacman -Sy linux-g14 linux-g14-headers --noconfirm --needed
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Force restart to apply changes
@@ -32,4 +32,4 @@ sleep 1 && echo "3..."
 sleep 1 && echo "2..."
 sleep 1 && echo "1..."
 sleep 1 && echo "Now."
-poweroff 
+reboot
