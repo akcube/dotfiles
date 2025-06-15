@@ -1,0 +1,98 @@
+# Define the Dracula color palette
+[palette]
+black = "#21222c"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#f8f8f2"
+bright_black = "#6272a4"
+bright_red = "#ff6e6e"
+bright_green = "#69ff94"
+bright_yellow = "#ffffa5"
+bright_blue = "#d6acff"
+bright_magenta = "#ff92d0"
+bright_cyan = "#a4ffff"
+bright_white = "#ffffff"
+
+# Prompt format
+format = """
+[░▒▓](#ff79c6)\
+[  ](bg:#ff79c6 fg:#090c0c)\
+[](bg:#bd93f9 fg:#ff79c6)\
+$directory\
+[](fg:#bd93f9 bg:#ff5555)\
+$git_branch\
+$git_status\
+[](fg:#ff5555 bg:#50fa7b)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#50fa7b bg:#f1fa8c)\
+$time\
+[ ](fg:#f1fa8c)\
+\n$character"""
+
+# Directory module
+[directory]
+style = "fg:#f8f8f2 bg:#bd93f9"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+# Git branch module
+[git_branch]
+symbol = ""
+style = "bg:#ff5555"
+format = '[[ $symbol $branch ](fg:#bd93f9 bg:#ff5555)]($style)'
+
+# Git status module
+[git_status]
+style = "bg:#ff5555"
+format = '[[($all_status$ahead_behind )](fg:#bd93f9 bg:#ff5555)]($style)'
+
+# Node.js module
+[nodejs]
+symbol = ""
+style = "bg:#50fa7b"
+format = '[[ $symbol ($version) ](fg:#bd93f9 bg:#50fa7b)]($style)'
+
+# Rust module
+[rust]
+symbol = ""
+style = "bg:#50fa7b"
+format = '[[ $symbol ($version) ](fg:#bd93f9 bg:#50fa7b)]($style)'
+
+# Go module
+[golang]
+symbol = ""
+style = "bg:#50fa7b"
+format = '[[ $symbol ($version) ](fg:#bd93f9 bg:#50fa7b)]($style)'
+
+# PHP module
+[php]
+symbol = ""
+style = "bg:#50fa7b"
+format = '[[ $symbol ($version) ](fg:#bd93f9 bg:#50fa7b)]($style)'
+
+# Time module
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#f1fa8c"
+format = '[[  $time ](fg:#090c0c bg:#f1fa8c)]($style)'
+
+# Character module
+[character]
+success_symbol = "[λ](bold #f8f8f2)"
+error_symbol = "[λ](bold #ff5555)"
+
